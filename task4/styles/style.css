@@ -1,0 +1,108 @@
+body{color: rgb(240, 236, 236);
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#main-cont{
+background-color: black;
+height: 100vh;
+padding: 10px;
+}
+#top-header{
+background-color: #6F6F6F;
+height: 40px;
+text-align: center;
+font: size 1.4em;
+padding-top: 10px;
+font-weight: bold;
+color: rgb(236, 216, 219);
+}
+#user-menu{
+    background-color: #000000;
+padding: 20px;
+}
+#user-menu .left-items{
+display: inline-block;
+    text-align: left;
+width: 49%;
+
+}
+.right-items{
+    display: inline-block;
+
+width: 49%;
+    text-align: right;
+}
+#user-menu a{
+    color: rgb(236, 216, 219);
+text-decoration: none;
+margin-left: 10px;
+}
+#user-menu a:hover{
+    color: rgb(106, 106, 155);
+}
+#page-cont{
+    background-color: #33373C;
+min-width: height 80% vh; ;
+background-image: url(../images/Capture.JPG);
+background-repeat: repeat;
+background-size: contain;
+text-align: center;
+height:500px ;
+padding: 10px 100px;
+}
+.block{
+display: inline-block;
+width: 180px;
+height: 100px;
+box-shadow: gray ;
+margin: 10px;
+padding-top: 50px;
+border-radius: 5px;
+}
+
+a.block{
+    color: rgb(236, 216, 219);
+    text-decoration: none;}
+   
+a.block :hover{
+        color:black;
+    text-decoration: underline;
+    background-color:rgba(0,0,0,0,0.2);
+    }
+
+#blocks-cont{
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+
+}
+.color1{
+background-color: #2a9d8f;
+}
+.color2{
+background-color:#f95738 ;
+}
+.color3{
+background-color: #6c757d;
+}
+.color4{
+    background-color: #f4978e;
+
+}
+.color5{
+    background-color: #231942;
+
+}
+.color6{
+    background-color: #82c0cc;
+
+}
+#footer{
+    background-color: #CF7133;
+    padding: 10px;
+    text-align: center;
+    
+    
+    }
