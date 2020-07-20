@@ -51,16 +51,28 @@ text-align: center;
 height:500px ;
 padding: 10px 100px;
 }
+@media only screen and (max-width: 700px){
 .block{
 display: inline-block;
-width: 180px;
+width: 180px !important;
 height: 100px;
 box-shadow: gray ;
 margin: 10px;
 padding-top: 50px;
 border-radius: 5px;
 }
-
+#blocks-cont{
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-direction: column !important;
+align-items: center;
+}
+}
 a.block{
     color: rgb(236, 216, 219);
     text-decoration: none;}
@@ -71,13 +83,7 @@ a.block :hover{
     background-color:rgba(0,0,0,0,0.2);
     }
 
-#blocks-cont{
-    width: 700px;
-    text-align: center;
-    margin: auto;
-    padding-top: 50px;
 
-}
 .color1{
 background-color: #2a9d8f;
 }
