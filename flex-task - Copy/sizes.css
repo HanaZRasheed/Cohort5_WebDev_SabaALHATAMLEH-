@@ -1,0 +1,25 @@
+.w_15{
+   flex-direction: column !important;
+}
+
+.w_30{
+   
+    width:100% !important;
+}
+.w_35{
+    width:100% !important;
+
+}
+
+.w_50{
+    width:100% !important;
+
+}
+.w_60{
+    display: inline-block;
+    width: 60%;
+}
+.w_70{
+    width:100% !important;
+
+}
