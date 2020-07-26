@@ -1,0 +1,18 @@
+#container{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+grid-template-columns: auto auto auto;
+}
+.grid-item{
+    text-align: center;
+    color: cornsilk;
+    border: black solid 1px;
+}
+.item1{
+    grid-column: 1/3;
+}
+.item3{
+    grid-row: 2/4;
+}
