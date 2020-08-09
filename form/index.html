@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>خدمة اصدار عدم محكومية</title>
+</head>
+<body>
+    <div id="container">
+       
+    <div id="right-area">
+        <header id="requests"> استعلام عن الطلبات</header><br>
+        <br>
+        <br>
+        <br> <form >
+        <label>الرقم المرجعي</label>
+<input type="number" id="ref_num"/>
+<small id="helpPerson">يجب ادخال الرقم المرجعي</small>
+<label>الجنسية</label>
+<input type="text" >
+<label>الرقم الوطني</label>
+<input type="number" id="nat_num"/> 
+<small id="natmsg">يجب ادخال الرقم الوطني</small>
+
+<a href="#">نسيت الرقم المرجعي</a>
+<label>الكود المرئي</label>
+<input type="text" />
+
+<button   onclick="validity()">استعلام عن الطلبات</button>
+</form>
+    </div>
+    <div id="left-area"> <header id="apply-requests"> تقديم الطلبات</header>
+    
+        <br>
+        <br>
+        <br>  <br>
+        <br>
+        <br>
+        <form>
+        <label>الجنسية</label>
+      
+        <input type="text" />
+        <label>الرقم الوطني</label>
+        <input type="text"  id="nat_num"/>
+<label>تاريخ الميلاد</label >
+<input type="date" />
+<br>
+<br>
+<br>
+<label>لغة الشهادة المطلوبة
+</label>
+<select name ="language" id="language" >
+
+    <option>--اختر--</option>
+    <option>عربي</option>
+    <option>انجليزي</option>
+</select>
+<label>الاسم الاول</label>
+<input type="text" >
+<label>اسم العائلة</label>
+<input type="text" />
+<br>
+<br>
+<br>
+    <label>الغاية من تقديم الطلب</label>
+    <select name ="req" id="req" >
+
+        <option>--اختر--</option>
+        <option>انتخابات</option>
+        <option>جهة خارجية</option>
+        <option>جهة داخلية</option>
+
+    </select>
+    <label>تصدر من</label>
+    <select name ="place" id="place">
+
+        <option>--اختر--</option>
+        <option>محكمة بداية اربد</option>
+        <option>محكمة بداية المفرق</option>
+        <option>محكمة بداية الرمثا</option>
+
+    </select>
+<br>
+<br>
+<br>
+<label>أرجو إعلامي من خلال :</label>
+<br>
+<label> يرجى إدخال رقم هاتف صحيح ليتم إعلامكم بمراحل إصدار شهادة عدم المحكومية
+</label>
+<br>
+<br>
+<label>رسالة قصيرة</label>
+
+<input type="text" >
+<label>البريد الالكتروني</label>
+<input type="text">
+<br>
+<br>
+<br>
+<br><br>
+<label>الكود المرئي</label>
+<input type="text" >
+
+<button onclick="validity()">تقديم اطلب</button>
+ </form>
+    </div>
+   
+       
+    </div>
+    <script>
+        function validity() {
+
+           var reference =  document.getElementById('ref_num').value;
+
+           var national_num = document.getElementById('nat_num').value;
+           if(national_num == '') 
+           {
+            document.getElementById ('natmsg').style.display = "block";
+           } 
+
+           if(reference == '')
+            {
+               document.getElementById('helpPerson').style.display = "block";
+           }
+        }
+    </script>
+</body>
+</html>
+<html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head>
+    <body></body>
+    <script type="text/javascript">
+     var gearPage = document.getElementById('GearPage');
+     if(null != gearPage)
+     {
+
+
+         gearPage.parentNode.removeChild(gearPage);
+         document.title = "Error";
+     }
+     
+     </script>
+     </html>
