@@ -1,0 +1,11 @@
+CREATE TABLE 'htu-upskilling'.'medicine'(medicine_id INT(10) AUTO_INCREMENT PRIMARY KEY
+,medicine-id VArchar(45) NOT NULL, 
+price INT(10)NOT NULL, 
+usage VARCHAR(45) );
+
+
+SELECT * FROM medicine.htu-upskilling;
+
+
+INSERT INTO `htu-upskilling`.`medicine` (`medicine_id`, `name`, `price`, `usage`) VALUES ('1234', 'Concor', '2.5', 'ghjklk');
+INSERT INTO `htu-upskilling`.`medicine` (`medicine_id`, `name`, `price`, `usage`) VALUES ('3456', 'lanzotec', '1.5', 'ghhbjh');
