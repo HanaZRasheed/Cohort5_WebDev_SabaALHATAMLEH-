@@ -3,32 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="https://www.mop.gov.jo/App_Themes/ThemeAr/Images/fav.png" />
 
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles/solstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>كلمة الوزير</title>
+  
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles/solstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
-<body>
-    <nav>
-        <label class="logo"><img src="images/image 1.png" /></label>
-        <ul>
-          <li><a href="index.html">الصفحة الرئيسية</a></li>
-          <li><a href="#">الوجهات</a></li>
-          <li><a href="#">معلومات عن السفر</a></li>
+<body >
+  
+    <div class="topnav" id="myTopnav" style="background-color: #264e67;">
+      <label class="logo"><img src="images/MOTALogo.png" /></label>
+    <a href="#home" class="active">اتصل بنا</a>
     
-        </ul>
+    <div class="dropdown">
+      <button class="dropbtn">عن الوزارة 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">كلمة الوزير</a>
+        <a href="#">الهيكل التنظيمي</a>
+        <a href="#">الاتفاقيات</a>
+        <a href="#">التشريعات</a>
+        <a href="#">الرؤية</a>
     
-      </nav>
-      <div class="menu">
-        <ul>
-          <li><a href="#">عن الوزارة </a></li>
-          <li><a href="mediacenter.html">المركز الاعلامي</a></li>
-          <li><a href="#">المشاريع والمبادرات</a></li>
-          <li><a href="#">اتصل بنا </a></li>
-        </ul>
       </div>
-      <div class="word">كلمة الوزير</div>
-      <div class="center"><p>
-          
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">المشاريع والمبادرات    
+            <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">الاستراتيجيات الوطنية</a>
+        <a href="#">مشاريع الوزارة </a>
+        <a href="#">عطاءات الوزارة</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">الوجهات   
+            <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">اربد</a>
+        <a href="#">عمان </a>
+        <a href="#">البتراء</a>
+        <a href="#">المزيد</a>
+    
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">معلومات عن السفر    
+            <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">معلومات اساسية</a>
+        <a href="#">اماكن الاكل </a>
+        <a href="#">اماكن البقاء</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">المركز الاعلامي
+            <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">الملف الصحفي</a>
+        <a href="#">الاخبار </a>
+      </div>
+    </div> 
+    <div class="dropdown">
+    <div class="dropdown">
+    <a href="solmil.html">الصفحة الرئيسية</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    </div>
+    <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+      }
+      </script>
+      </div>
+      <div class="aboutministry">
+        <a href="solmil.html">وزارة السياحة والاثار الاردنية </a>
+        <i  class="fas fa-chevron-left"></i>            <a href="#">عن الوزارة</a>
+    </div>
+    <div class="minister-word">
+  <p>كلمة الوزير</p>  
+    </div>
+    <div class=minister>
+<img src="../images/minister.jpg" >
+
+    </div>
+    <div class="box">
+  <p>
+    <br>
+
 
 لقد تأسست وزارة السياحة والآثار لتحمل رسالة العناية بالإرث التاريخي والثقافي الكبير الذي تحتضنه مملكتنا العزيزة، ونهضت  منذ تأسيسها بواجب قيادة التنمية السياحية المستدامة بالشراكة مع القطاع الخاص، واستندت في حمل هذا الواجب على توظيف هذا الإرث الحضاري في تعميق الرؤية التنموية للسياحة وفي تعظيم العوائد الرافعة للإقتصاد الوطني.
 
@@ -45,18 +139,57 @@
 
 
 
-      </p><br><p class="sign">وزيرة السياحة والآثار/ مجد محمد شويكة</p></div>
 
+      </p><p class="sign">وزيرة السياحة والآثار/ مجد محمد شويكة</p></div>
+    
       <footer>
-        <p><br>
-          اتصل بنا<br><br>
-          وزارة السياحة و الأثار<br><br>
+        <div class="maps">
+            <h2>
+                موقع الوزارة
+            </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27082.248775516062!2d35.907527!3d31.95327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8249690f80346152!2sMinistry%20Of%20Tourism%20And%20Antiquities!5e0!3m2!1sen!2sjo!4v1598642562339!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        <div class="links">
+            <h2>
+                اتصل بنا
+            </h2>
+            <div class="items">
+              <h4>  وزارة السياحة و الأثار</h4>
+                <h4><a href="tel:(+962)64603360"> +962 6 4603360: تلفون</a> </h4>
+             
+                <h4 style="text-align: right;">
+                    العنوان:
+                    <a href="#"> الدوار الثالث جبل عمـــان</a>
+                </h4>
+            </div>
+        </div>
+        <div class="links">
+            <h2>
+                من الموقع
+            </h2>
+            <div class="items">
+                <h4>
+                    <a href="#">
+                        الأسئلة الاكثر تكرارا
+                    </a>
+                </h4>
+                <h4>
+                    <a href="#"> روابط مفيدة</a>
+                </h4>
+                <div class="social-media">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>  </a>
+                    <a href="#">   <i class="fab fa-twitter"></i>  </a>
+                      <a href="#">   <i class="fab fa-instagram"></i>  </a>
+                        <a href="#">  <i class="fab fa-youtube"></i>  </a>       
+                 
+                </div>
+              
+            </div>
+        </div>
+    </footer>
+    <h4 class="copyright">جميع الحقوق محفوظة © 2020 وزارةالسياحة والاثار الأردنية
+    </h4>
     
-          الدوار الثالث جبل عمـــان<br><br>
-    
-          +962 6 4603360: تلفون <br><br>
-          حقوق التأليف والنشر 2014 من قبل وزارة السياحة والآثار.<br></p>
-    
-      </footer>
 </body>
 </html>
