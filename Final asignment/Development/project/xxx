@@ -1,0 +1,145 @@
+ <div class="container">
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="images/amman1.jpg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="images/amman2.jpg" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="images/amman3.jpg" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+              </div>
+            </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <div class="card">
+      <div class="img">
+        <img src="images/ancient-roman.jpg">
+      </div>
+      <div class="top-text">
+        <div class="amman">عمّان</div>
+      </div>
+      <div class="bottom-text">
+        <div class="text"> تتميّز العاصمة الأردنية عمّان بالتناقضات المدهشة، فهي تجمع بين القديم والحديث وتقع على
+          منطقة مرتفعة بعض الشيء بين الصحراء و وادي الأردن .
+        </div>
+        <div class="btn">
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </div>
+
+    </div>
+  <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="im" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+
+    <div class="card">
+      <div class="img">
+        <img src="images/ajloun.jpg">
+      </div>
+      <div class="top-text">
+        <div class="amman">عجلون</div>
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          هنا حيث تجتمع عجائب الطبيعة مع عبقرية الهندسة المعمارية العسكرية لدى عرب العصور الوسطى، يتجلّى الجمال كله بفضل
+          هذا المزيج الرائع.
+        </div>
+        <div class="btn">
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="images/aqabacard.jpg">
+      </div>
+      <div class="top-text">
+        <div class="amman">العقبة</div>
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          تقع العقبة أقصى جنوب الأردن وتبعد حوالى 4 ساعات عن العاصمة عمّان، وهي مدينة ساحلية ذات طابع أردني.ضافة إلى
+          ذلك، تتمتع العقبة بعبقٍ تاريخي .
+        </div>
+        <div class="btn">
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="images/jerash.jpg">
+      </div>
+      <div class="top-text">
+        <div class="amman">جرش</div>
+      </div>
+      <div class="bottom-text">
+        <div class="text"> تتلاقى في جرش حضارات الرومان و اليونان و الشرق بمزيج يمنح المدينة طابعاً تاريخياً مميزاً. في
+          الربيع، تكتسي المدينة و تلالها برداء أخضر يستقطب .
+        </div>
+        <div class="btn">
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  .align{
+  text-align: right;
+  font-weight: bold;
+ }

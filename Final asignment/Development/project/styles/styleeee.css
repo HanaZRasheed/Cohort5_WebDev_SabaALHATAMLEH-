@@ -1,0 +1,339 @@
+body{
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    }
+    .header
+    {  color:hsl(0, 0%, 97%);
+  
+        margin: 0px;
+        padding: 0px;
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/petr.jpg);
+      background-position: center !important;
+      background-repeat:  no-repeat !important;
+    
+      background-size: cover !important;
+      width: 100%;
+      height: 100vh;
+    }
+  label.logo{
+      color: wheat;
+      font-size: 35px;
+      height: 100px;
+      line-height: 80px;
+      padding: 0 100px;
+      margin: 0px;
+      float: right;
+  }
+    .navbar {
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, -2); 
+   margin-left: 100px;
+    }
+    .navbar ul{
+      text-align: center;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline block;
+            text-align: center;
+  
+    }
+    .navbar ul li a{
+   transition:all ease 0.5s;
+  
+  }
+  
+  
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .drpdn{
+        margin-top: 30px;
+    }
+    
+    .dropdown .dropbtn {
+        margin-top: 50px;
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0px;
+  
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:#d1a442;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+    background-color: rgba(249, 249, 249, 0.6);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+         text-align: center;
+         margin-top: 57px;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: right;
+    }
+    /*hioon wselt bl solmil*/
+    .dropdown-content a:hover {
+      background-color:rgba(249, 249, 249, 0.6);
+      color:rgb(250, 111, 31);
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .pic{ display: flex;
+        font-weight: bold;
+        margin-top: 40vh;
+       font-size: xx-large;
+       margin-right:30vh;
+    }
+    .video-container{
+   
+        display: flex;
+        enable-background: #eeeeee;
+        height: 100vh;
+        align-items: center;
+        justify-content: right;
+        margin-right: 10vh;
+  
+    }
+    .video{
+  
+      box-shadow: 5px 10px 18px #888888;
+  width: 100%;
+    }
+    .c-video{
+        width: 100%;
+        max-width: 800px;
+    }
+    .video-container .text {
+        color: #000;
+        margin-right: 5%;
+       margin-left: 2%;
+      
+        text-align: right;
+     float: left; 
+      }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    place-items: center;
+  
+  }
+  .card{    background: white;
+  
+   /* height:400px ;*/
+    width: 350px;
+    margin: 0 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,0.2);
+  }
+  .card .img{
+    height: 300px;
+    width: 100%;
+  
+  }
+  .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+      
+  }
+  .card .top-text{
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 600;
+  color: #202020;  
+  }
+    .card .bottom-text {
+      padding: 0 20px 10px 20px;
+      margin-top: 80px;
+      background: white;
+    }
+    .card .bottom-text .text{
+      text-align: justify;
+  
+    }
+    i{
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    .card .bottom-text .btn{
+      margin: 10px 0;
+      text-align: right;
+    }
+    .card .bottom-text .btn a{
+      text-decoration: none;
+      background: #e74c3c;
+      color:#f2f2f2;
+      padding: 5px 8px;
+      border-radius: 3px;
+      display: inline-flex;
+      transition: 0.2s;
+      margin-bottom: 20px;
+   }
+   .card .bottom-text .btn a:hover{
+     transform: scale(0.9);
+   }
+   .card:hover{
+     height: 200px;
+   }
+  h1{
+    font-weight:thin;
+    font-style:normal;
+  text-align: right;
+  margin-right: 20vh;
+  }
+  .btn a{text-decoration: none;
+    float: left;  background: #e74c3c;
+    color:#f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+    margin-top: 30px;
+    margin-left:30px;
+  }
+  .btn a:hover{
+    background-color: #3c100d;
+    color: beige
+  }
+  
+  .app-text{
+    float: left;
+  width: 40%;
+  margin-left: 2vh;
+  }
+  .app-text p{
+    text-align: right;
+  }
+   #imge{
+            height:150px;
+        }
+  .containerr{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .containerr ul{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  
+  .containerr ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:300px;
+    background-color:#d08c60;
+    margin :20px 0px 20px 55px; 
+    box-sizing: border-box;
+    margin-left: 10%;
+  }
+  .containerr ul li:hover{
+    opacity: 0.8;
+  }
+  
+  .containerr ul li .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: #d08c60;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+  }
+  
+  @media screen and (max-width:1250px){
+    .containerr ul li{
+        width:40%;
+        margin-left: 40px;
+         
+    }
+  }
+  .containerr img{
+  
+  margin :50px 80px 20px 0px; 
+  }
+  iframe{
+    
+    margin-right: 10vh;
+    width: 50%;
+    height: 60vh;
+  
+  }
+  .video-container{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,0.2);
+  
+  }
+  .video-container p{
+    margin-right: 5vh;
+  }
+  footer{
+    color: #000;
+    height: 40vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,0.2);
+  
+  }
+  footer .left-column{
+    float: left;
+    margin-top: 30px;
+    margin-left:20vh ;
+  }
+  footer .left-column p{
+    font-weight: bold;
+    
+  }
+  footer .right-column
+    iframe {
+  margin-top: 20px;
+      height: 244px;
+      width: 57%;
+      
+      border-radius: 5px;
+      box-shadow: 4px 4px rgba(0, 0, 0,0.2);
+    
+  
+  }
+  .right-column{float: right;
+    width: 59%;
+    margin-top: 0;
+    
+    position: relative;
+  }
+  
