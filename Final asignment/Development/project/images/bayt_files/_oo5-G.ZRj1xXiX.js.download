@@ -1,0 +1,1 @@
+(this.$WP=this.$WP||[]).push(["_oo5-G",(t,o)=>{"use strict";var e,i,r,s,E=()=>e(r,{promoPosition:"CENTER"});return[()=>{s=i((t,o)=>(r.stage(t,o,"CENTER",""),()=>({})))(E),t("default",s)},[t=>e=t.createElement,t=>i=t.bind,t=>r=t.CMSPromo]]},["cDcdfi","RiHMo-","pgZY2-"]]);
