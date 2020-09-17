@@ -143,3 +143,136 @@
   text-align: right;
   font-weight: bold;
  }
+
+  <p class="article">
+        لطالما كانت المملكة الأردنية الهاشمية مقصداً يجذب الرحّالة القدامى قديماً، ولا تزال كذلك بالنسبة للجيل الجديد من زوّارها بفضل ما تجمعه المملكة في ثناياها من مزيج بين المُعاصَرة والعراقة.،مِن وادي رم الخلاّب والآثار الشاهدة على حضارات الماضي المهيب إلى أجواء المدينة الصاخبة التي تحياها العاصمة عمّان، يمكن القول أن الأردن وجهة فريدة تقدّم لزائرها مناظرَ مذهلة ووسائل راحةٍ رائعة وطعاماً لا مثيل له!، يحتوي الأردن على عددٍ لا حصر له من العجائب التي ستتركك في دهشةٍ من أمرك.    </p>
+
+
+
+  <form action="php pages/guid.php" method="POST" >
+  <div class="form-row" >
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">الرقم الوطني </label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm" name="natnum">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">اسم الدليل السياحي -عربي</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label"name="arname">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">اسم الدليل السياحي -انجليزي</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="engname">
+    </div>
+  </div>
+  
+    <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">الحالة الاجتماعية</label>
+        <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="status">
+
+    
+        <!-- <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="status">
+        <option selected>Choose...</option>
+        <option value="1">أعزب</option>
+        <option value="2">متزوج</option>
+        <option value="3">مطلق</option>
+        <option value="4">أرمل</option>
+      </select>
+    -->
+    
+</div>
+<div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">اسم الأم </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="moname">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">مكان الميلاد</label>
+    <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="pob">
+
+ <!-- <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="pob">
+    <option selected>Choose...</option>
+    <option value="1">اربد</option>
+    <option value="2">جرش</option>
+    <option value="3">عجلون</option>
+    <option value="4">المفرق</option>
+    <option value="5">عمان</option>
+    <option value="6">السلط</option>
+    <option value="7">الكرك</option>
+    <option value="8">الطفيلة</option>
+    <option value="9">مادبا</option>
+    <option value="4">معان</option>
+    <option value="4">الزرقاء</option>
+    <option value="12">العقبة</option>
+
+      </select>-->
+
+</div>
+<div class="form-group row">
+    <label for="example-date-input" class="col-2 col-form-label">تاريخ الميلاد</label>
+    <div class="col-10">
+   <!--   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="dob">-->
+   <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="dob">
+
+    </div>
+  </div>
+
+  
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">الجنس</label>
+    <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="gender">
+
+ <!-- <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="gender">
+    <option selected>Choose...</option>
+    <option value="1">ذكر</option>
+    <option value="2">أنثى</option>
+
+  </select>
+-->
+</div>
+  
+<div class="form-group row">
+  
+  <label for="colFormLabel" class="col-sm-2 col-form-label">المؤهل الأكاديمي</label>
+  <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="degree">
+
+  <!-- <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="degree">
+    <option selected>Choose...</option>
+    <option value="1">بكالوريوس</option>
+    <option value="2">ماجستير</option>
+    <option value="3">دكتوراة</option>
+  </select>
+-->
+</div>
+<div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">التخصص الدراسي </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="field">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">المؤسسة التعليمية </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="uni">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="example-date-input" class="col-2 col-form-label">تاريخ التخرج</label>
+    <div class="col-10">
+  <!--    <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="dog">-->
+  <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label" name="dog">
+
+    </div>
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary" name="submit" value="Submit"
+                        id="submit_form">Submit</button>
+
+</form>

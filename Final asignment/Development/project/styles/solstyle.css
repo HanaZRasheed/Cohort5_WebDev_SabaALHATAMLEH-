@@ -290,6 +290,12 @@ margin-left: 2vh;
 .app-text p{
   text-align: right;
 }
+@media screen and (max-width: 350px) {
+  .app-text {
+      display: none;
+  }
+}
+
  #imge{
           height:150px;
       }
@@ -942,4 +948,120 @@ font-size: larger;
 
 .naf:after {
   display: none;
+}
+
+.flip {
+  -webkit-perspective: 800;   
+          perspective: 800;
+        position: relative;
+        text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 270px;
+    height: 178px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+   
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+   position: absolute;
+   width: 270px;
+   z-index: 1;
+}
+.flip .card .front img{
+  width: 270px;
+  height: 100%;
+}
+.flip .card .img {
+   position: relaitve;
+   width: 270px;
+   height: 178px;
+   z-index: 1;
+   border: 2px solid #000;
+}
+.flip .card .back {
+  padding-top: 10%;
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+  position: absolute;
+}
+.inner{
+  margin:0px !important;
+  width: 270px;
+}
+.containerrr .roww input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.containerrr .roww  p {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  text-align: right;
+
+
+}
+
+.containerrr .roww  input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.containerrr .roww   input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerrr {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.containerrr .roww   .coll-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.containerrr .roww     .coll-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.containerrr  .roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .coll-25, .coll-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
