@@ -14,11 +14,12 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-
-    <title> الاتفاقيات</title>
-  
-    
+    <title>الاتفاقيات</title>   
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="styles/solstyle.css">
@@ -26,516 +27,348 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+
+
   
 </head>
-<body >
-  
-    <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #264e67; ">
-        <label class="logo"><img src="images/MOTALogo.png" /></label>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav article">
-            <li class="nav-item ">
-              <a class="nav-link" href="index.html" style="color: ivory;">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  عن الوزارة
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
-                  <a class="dropdown-item" href="minister'sword.html">كلمة الوزير</a>
-                  <a class="dropdown-item" href="organizationalchart.html">الهيكل التنظيمي</a>
-                  <a class="dropdown-item" href="conventions.html"> الاتفاقيات</a>
-                  <a class="dropdown-item" href="regulation.html">التشريعات</a>
-                  <a class="dropdown-item" href="ministryvision.html">الرؤية</a>
-    
-                </div>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                المشاريع والمبادرات    
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
-                <a class="dropdown-item" href="nationalstratigy.html">الاستراتيجيات الوطنية</a>
-                <a class="dropdown-item" href="ministryprojects.html">مشاريع الوزارة</a>
-                <a class="dropdown-item" href="bids.html">عطاءات الوزارة</a>
-              </div>
-            </li>
-    
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    الخدمات الإلكترونية
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
-               <!--  <a class="dropdown-item" href="contact.html">contact</a>--> 
-                  <a class="dropdown-item" href="licence.html">تجديد رخصة دليل سياحي</a>
-                  <a class="dropdown-item" href="compliant.html">تقديم شكوى على منشأة سياحية</a>
-                  <a class="dropdown-item" href="training.html">طلب تدريب طلاب المنح</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    معلومات عن السفر                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
-                  <a class="dropdown-item" href="essintialinfo.html">معلومات اساسية</a>
-                  <a class="dropdown-item" href="where-to-eat.html">اماكن الاكل</a>
-                  <a class="dropdown-item" href="where-to-stay.html">اماكن البقاء</a>
-                  <a class="dropdown-item" href="transition.html">الوصول إلى والتنقل في</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 الوجهات              </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
-                  <a class="dropdown-item" href="Amman.html">عمان</a>
-                  <a class="dropdown-item" href="deadsea.html">البحر الميت </a>
-                  <a class="dropdown-item" href="petra.html">البتراء</a>
-                  <a class="dropdown-item" href="aqaba.html">العقبة،</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"   href="mediacenter.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  المركز الإعلامي
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right; align-items: left;">
-                  <a class="dropdown-item" href="news.html">الاخبار</a>
-                  <a class="dropdown-item" href="Journalisimfile.html">الملف الصحفي</a>
-             
-                </div>
-              </li>
-    
-            <li class="nav-item">
-                <a class="nav-link" href="contactus.html" style="color: ivory;">اتصل بنا</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
+<body  >
+  <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #264e67; ">
+    <label class="logo"><img src="images/MOTALogo.png" /></label>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav article">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html" style="color: ivory;">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              عن الوزارة
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
+              <a class="dropdown-item" href="minister'sword.html">كلمة الوزير</a>
+              <a class="dropdown-item" href="organizationalchart.html">الهيكل التنظيمي</a>
+              <a class="dropdown-item" href="conventions.html"> الاتفاقيات</a>
+              <a class="dropdown-item" href="regulation.html">التشريعات</a>
+              <a class="dropdown-item" href="ministryvision.html">الرؤية</a>
+
+            </div>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            المشاريع والمبادرات    
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
+            <a class="dropdown-item" href="nationalstratigy.html">الاستراتيجيات الوطنية</a>
+            <a class="dropdown-item" href="ministryprojects.html">مشاريع الوزارة</a>
+            <a class="dropdown-item" href="bids.html">عطاءات الوزارة</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              الخدمات الإلكترونية
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
+         <!--  <a class="dropdown-item" href="contact.html">contact</a>--> 
+            <a class="dropdown-item" href="licence.html">تجديد رخصة دليل سياحي</a>
+            <a class="dropdown-item" href="compliant.html">تقديم شكوى على منشأة سياحية</a>
+            <a class="dropdown-item" href="training.html">طلب تدريب طلاب المنح</a>
+          </div>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                معلومات عن السفر                 </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
+              <a class="dropdown-item" href="essintialinfo.html">معلومات اساسية</a>
+              <a class="dropdown-item" href="where-to-eat.html">اماكن الاكل</a>
+              <a class="dropdown-item" href="where-to-stay.html">اماكن البقاء</a>
+              <a class="dropdown-item" href="transition.html">الوصول إلى والتنقل في</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             الوجهات              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right;">
+              <a class="dropdown-item" href="Amman.html">عمان</a>
+              <a class="dropdown-item" href="deadsea.html">البحر الميت </a>
+              <a class="dropdown-item" href="petra.html">البتراء</a>
+              <a class="dropdown-item" href="aqaba.html">العقبة،</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"   href="mediacenter.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              المركز الإعلامي
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" text-align: right; align-items: left;">
+              <a class="dropdown-item" href="news.html">الاخبار</a>
+              <a class="dropdown-item" href="Journalisimfile.html">الملف الصحفي</a>
+         
+            </div>
+          </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="contactus.html" style="color: ivory;">اتصل بنا</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
       <div class="aboutministry">
-        <a href="solmil.html">وزارة السياحة والاثار الاردنية </a>
-        <i  class="fas fa-chevron-left"></i>            <a href="#"> 
-          عن الوزارة</a>
+        <a href="index.html">وزارة السياحة والاثار الاردنية </a>
+        <i  class="fas fa-chevron-left"></i>            <a href="#"> عن الوزارة</a>
     </div>
     <div class="minister-word">
-  <p> الاتفاقيات</p>  
+  <p>الاتفاقيات</p>  
     </div>
     <br>
-    <section class="section">
-      <h3 style="text-align: center;">الاتفاقيات الثنائية</h3>
-      <!-- slider for units -->
-      <div class="container">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators indi">
-                  <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <div class="row">
-                          <div class="col">
-                              <a href="https://www.mota.gov.jo/Documents/%D9%85%D9%88%D8%B1%D9%8A%D8%B4%D9%8A%D9%88%D8%B3.pdf" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية موريشيوس في مجال التعاون السياحي</h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>اتفاق التعاون في الميدان السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة المملكة المغربية </h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>اتفاق التعاون في مجال السياحة بين حكومة المملكة الأردنية الهاشمية وحكومة الجمهورية الجزائرية الديمقراطية الشعبية</h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5> اتفاق سياحي بين المملكة الأردنية الهاشمية وجمهورية مصر العربية</h5>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="row">
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>اتفاقية التعاون السياحي بين حكومة المملكة الأردنية الهاشمية والسلطة الوطنية الفلسطينية</h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5> اتفاقية التعاون السياحي بين حكومة المملكة الأردنية الهاشمية وجمهورية السودان. تاريخ التوقيع 30/3/2000</h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>اتفاقية التعاون السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة الجمهورية اليمنية</h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية التعاون في المجال السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية كوريا</h5>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="row">
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>اتفاقية التعاون في الميدان السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة دولة الكويت
-                                      </h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية بين حكومة المملكة الأردنية الهاشمي وحكومة الجمهورية الهيلينية للتعاون السياحي
-                                      </h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية بين حكومة المملكة الأردنية الهاشمية ومجلس وزراء أوكرانيا في مجال التعاون السياحي
-                                      </h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية تعاون في المجال السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية روسيا الاتحادية
-                                      </h5>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="row">
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية تعاون في مجال السياحة بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية بلغاريا
-                                      </h5>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                              <a href="#" class="unita">
-                                  <div class="unit">
-                                      <img src="images/crown.png" alt="">
-                                      <h5>
-                                        اتفاقية تعاون في مجال السياحة بين حكومة المملكة الاردنية الهاشمية و حكومة جمهورية اذربيجان
-                                      </div>
-                              </a>
-                          </div>
-                          <div class="col">
-                            <a href="#" class="unita">
-                                <div class="unit">
-                                    <img src="images/crown.png" alt="">
-                                    <h5> اتفاقية سياحية تشيكية
-                                    </h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>اتفاقية للتعاون السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة الجمهورية الايطالية
-                                  </h5>
-                              </div>
-                          </a>
-                      </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- end of slider for units -->
-      </div>
-  </section>
- <h3 style="text-align: center;">مذكرة التفاهم</h3>
-
- <div class="container">
-  <div class="row">
-    <div class="col">
-        <a href="#" class="unita">
-            <div class="unit">
-                <img src="images/crown.png" alt="">
-                <h5> مذكرة تفاهم تشيلي
-                  </h5>
-            </div>
-        </a>
-    </div>
-    <div class="col">
-        <a href="#" class="unita">
-            <div class="unit">
-                <img src="images/crown.png" alt="">
-                <h5> مذكرة تفاهم للتعاون السياحي مع حكومة دولة قطر
-                </h5>
-            </div>
-        </a>
-    </div>
-    <div class="col">
-      <a href="#" class="unita">
-          <div class="unit">
-              <img src="images/crown.png" alt="">
-              <h5> 
-                مذكرة تفاهم مع وزارة الاقتصاد والنقل لدى جمهورية هنغاريا في مجال التعاون
-              </h5>
-          </div>
-      </a>
-  </div>
-    <div class="col">
-        <a href="#" class="unita">
-            <div class="unit">
-                <img src="images/crown.png" alt="">
-                <h5>مذكرة تفاهم مع إدارة السياحة الوطنية لجمهورية الصين الشعبية
-                </h5>
-            </div>
-        </a>
-    </div>
-    <div class="col">
-      <a href="#" class="unita">
-          <div class="unit">
-              <img src="images/crown.png" alt="">
-              <h5>مذكرة تفاهم مع وزارة السياحة بسلطنة عمان</h5>
-          </div>
-      </a>
-  </div>
-    <div class="col">
-        <a href="#" class="unita">
-            <div class="unit">
-                <img src="images/crown.png" alt="">
-                <h5>مذكرة تفاهم مع وزارة النقل والإنشاءات والسياحة في رومانيا                </h5>
-            </div>
-        </a>
-    </div>
-</div>
-</div>
-<br>
-
-
-<br>
-
-
-
-<section class="section">
-  <h3 style="text-align: center;">برامج تنفيذية</h3>
-  <!-- slider for units -->
-  <div class="container">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators indi">
-              <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
-              <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="row">
-                      <div class="col">
-                          <a href="https://www.mota.gov.jo/Documents/Algerian_Republic.pdf" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>
-
-                                    الجمهورية الجزائرية الديمقراطية الشعبية للسنوات 2006                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>الجمهورية العربية السورية للأعوام 2005-2006</h5>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>الجمهورية العربية السورية للأعوام 2007- 2009</h5>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5> الجمهورية اللبنانية للأعوام 2005-2010</h5>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>الجمهورية اليمنية للأعوام 2005-2007</h5>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>
-                                    السلطة الوطنية الفلسطينية للسنوات 2006-2010</h5>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>برنامج تنفيذي للتعاون السياحي بين حكومة المملكة الأردنية الهاشمية</h5>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>
-                                    جمهورية مصر العربية للاعوام 2007</h5>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-              </div>
   
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>
-                                 
-حكومة دولة الكويت للأعوام 2005-2007
-                                  </h5>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a href="#" class="unita">
-                              <div class="unit">
-                                  <img src="images/crown.png" alt="">
-                                  <h5>
-                                    حكومة مصر العربية للأعوام 2005-2007                                  </div>
-                          </a>
-                      </div>
-                      <div class="col">
-                        <a href="#" class="unita">
-                            <div class="unit">
-                                <img src="images/crown.png" alt="">
-                                <h5> حكومة مصر العربية للأعوام 2005-2007
-                                </h5>
-                            </div>
-                        </a>
-                    </div>
-               
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- end of slider for units -->
-  </div>
-</section>
-
-
-
-
-  <footer>
-    <div class="maps">
-        <h2>
-            موقع الوزارة
-        </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27082.248775516062!2d35.907527!3d31.95327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8249690f80346152!2sMinistry%20Of%20Tourism%20And%20Antiquities!5e0!3m2!1sen!2sjo!4v1598642562339!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-    <div class="links">
-        <h2>
-            اتصل بنا
-        </h2>
-        <div class="items">
-          <h4>  وزارة السياحة و الأثار</h4>
-            <h4><a href="tel:(+962)64603360"> +962 6 4603360: تلفون</a> </h4>
-         
-            <h4 style="text-align: right;">
-                العنوان:
-                <a href="#"> الدوار الثالث جبل عمـــان</a>
-            </h4>
-        </div>
-    </div>
-    <div class="links">
-        <h2>
-            من الموقع
-        </h2>
-        <div class="items">
-            <h4>
-                <a href="#">
-                    الأسئلة الاكثر تكرارا
-                </a>
-            </h4>
-            <h4>
-                <a href="#"> روابط مفيدة</a>
-            </h4>
-            <div class="social-media">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>  </a>
-                <a href="#">   <i class="fab fa-twitter"></i>  </a>
-                  <a href="#">   <i class="fab fa-instagram"></i>  </a>
-                    <a href="#">  <i class="fab fa-youtube"></i>  </a>       
-             
+    <section class="container p-t-3">
+        <div class="row">
+            <div class="col-lg-12  style="text-align:center;">
+                <h3>الاتفاقيات الثنائية</h3>
             </div>
-          
         </div>
+    </section>
+    <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right mb-4">
+                    <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                    <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container p-t-0 m-t-2 carousel-inner">
+            <div class="row row-equal carousel-item active m-t-0">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3> <a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">اتفاق التعاون في الميدان السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة المملكة المغربية</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="https://www.mota.gov.jo/Documents/%D9%85%D9%88%D8%B1%D9%8A%D8%B4%D9%8A%D9%88%D8%B3.pdf" class="unita">تحميل</a>
+                            </h3></div>
+                            <div class="card-text"> اتفاقية بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية موريشيوس في مجال التعاون السياحي</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></h3></div>
+                            <div class="card-text"> اتفاقية التعاون في المجال السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية كوريا</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row row-equal carousel-item m-t-0">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">اتفاقية التعاون في الميدان السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة دولة الكويت</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">اتفاقية التعاون السياحي بين حكومة المملكة الأردنية الهاشمية وجمهورية السودان. تاريخ التوقيع 30/3/2000</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">اتفاقية تعاون في المجال السياحي بين حكومة المملكة الأردنية الهاشمية وحكومة جمهورية روسيا الاتحادية</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="col-lg-12" style="text-align:center;">
+        <h3>مذكر التفاهم</h3>
     </div>
+    <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right mb-4">
+                    <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                    <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container p-t-0 m-t-2 carousel-inner">
+            <div class="row row-equal carousel-item active m-t-0">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3> <a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">مذكرة تفاهم تشيلي</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="https://www.mota.gov.jo/Documents/%D9%85%D9%88%D8%B1%D9%8A%D8%B4%D9%8A%D9%88%D8%B3.pdf" class="unita">تحميل</a>
+                            </h3></div>
+                            <div class="card-text"> مذكرة تفاهم مع وزارة الاقتصاد والنقل لدى جمهورية هنغاريا في مجال التعاون</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></h3></div>
+                            <div class="card-text"> مذكرة تفاهم للتعاون السياحي مع حكومة دولة قطر</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row row-equal carousel-item m-t-0">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">مذكرة تفاهم مع إدارة السياحة الوطنية لجمهورية الصين الشعبية</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">مذكرة تفاهم مع وزارة السياحة بسلطنة عمان</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="https://scontent.famm7-1.fna.fbcdn.net/v/t1.0-9/118927290_3160112814105378_4163662952252691286_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFCVc0wxpWcbFXdKrlKUULg6X70UKp1-DvpfvRQqnX4O67lGHvRqCSoxWfJ4Zt1pXN3n6oOwnwG9z5IhA7fC-1J&_nc_ohc=Os51gS0Eve0AX_jnLkb&_nc_ht=scontent.famm7-1.fna&oh=939729a369eea60cac93edc4ac7211d2&oe=5F884AE3" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3><a href="#" class="unita">تحميل</a></h3></div>
+                            <div class="card-text">مذكرة تفاهم مع وزارة النقل والإنشاءات والسياحة في رومانيا </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>
+       (function($){
+           "use strict";
+           $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+           $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+       })	
+       (jQuery);
+    </script>
+    
+
+  
+
+<footer>
+<div class="maps">
+    <h2>
+        موقع الوزارة
+    </h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27082.248775516062!2d35.907527!3d31.95327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8249690f80346152!2sMinistry%20Of%20Tourism%20And%20Antiquities!5e0!3m2!1sen!2sjo!4v1598642562339!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+<div class="links">
+    <h2>
+        اتصل بنا
+    </h2>
+    <div class="items">
+      <h4>  وزارة السياحة و الأثار</h4>
+        <h4><a href="tel:(+962)64603360"> +962 6 4603360: تلفون</a> </h4>
+     
+        <h4 style="text-align: right;">
+            العنوان:
+            <a href="#"> الدوار الثالث جبل عمـــان</a>
+        </h4>
+    </div>
+</div>
+<div class="links">
+    <h2>
+        من الموقع
+    </h2>
+    <div class="items">
+        <h4>
+            <a href="#">
+                الأسئلة الاكثر تكرارا
+            </a>
+        </h4>
+        <h4>
+            <a href="#"> روابط مفيدة</a>
+        </h4>
+        <div class="social-media">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>  </a>
+            <a href="#">   <i class="fab fa-twitter"></i>  </a>
+              <a href="#">   <i class="fab fa-instagram"></i>  </a>
+                <a href="#">  <i class="fab fa-youtube"></i>  </a>       
+         
+        </div>
+      
+    </div>
+</div>
 </footer>
 <h4 class="copyright">جميع الحقوق محفوظة © 2020 وزارةالسياحة والاثار الأردنية
 </h4>
