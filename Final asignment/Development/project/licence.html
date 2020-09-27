@@ -377,7 +377,39 @@
     </footer>
     <h4 class="copyright">جميع الحقوق محفوظة © 2020 وزارةالسياحة والاثار الأردنية
     </h4>
+    <script>
     
+      // this is the id of the form
+      $("#contact-form").submit(function(e) {
+      
+       
+      
+      e.preventDefault(); // avoid to execute the actual submit of the form.
+      
+      
+      
+      var form = $(this);
+      var url = form.attr('action');
+      
+      $.ajax({
+             type: "POST",
+             url: url,
+             data: form.serialize(), // serializes the form's elements.
+             success: function(data)
+             {
+                 alert("Thanks for filling out our form!"); // show response from the php script.
+             }
+           });
+      
+      
+      
+      
+      });
+      
+          
+      </script>
+    
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>
     </html> 
        
