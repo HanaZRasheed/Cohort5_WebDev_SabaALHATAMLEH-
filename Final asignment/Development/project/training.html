@@ -139,20 +139,22 @@
     </div>
    
    
-      <form class="needs-validation" novalidate  action="phppages/train.php" method="POST">
+      <form class="needs-validation" id="contact-form" novalidate  action="phppages/train.php" method="POST"  onsubmit="return validated()">
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName" class="align" style="  float:right;"> الاسم الرباعي</label>
-            <input type="text" class="form-control " id="firstName" placeholder="" value="" name="name" required>
-            <div class="invalid-feedback">
-           
-            </div>
+            <input type="text" class="form-control " id="firstName" placeholder="" value="" name="name" >
+            <div id="arnameer">الرجاء تعبئةالاسم الرباعي الكامل </div>
+         
           </div>
           <div class="col-md-6 mb-3">
             <label for="lastName" class="align" style="  float:right;">رقم بطاقة الأحوال            </label>
-            <input type="number" class="form-control" name="natid" id="lastName" placeholder="" value="" required>
+            <input type="number" class="form-control" name="natid" id="lastName" placeholder="" value="natid" >
+            <div id="Iderror" >الرجاء تعبئةرقم بطاقة الأحوال</div>
                     </div>
         </div>
+     
+
 
         <div class="mb-3">
           <label for="username" class="align"style="  float:right;" >البريد الإلكتروني</label>
@@ -160,7 +162,7 @@
             <div class="input-group-prepend">
               
             </div>
-            <input type="email" class="form-control" id="username" name="mail" required>
+            <input type="email" class="form-control" id="username" name="mail" >
             <span class="input-group-text">@</span>
             
           </div>
@@ -168,7 +170,7 @@
         <div class="row">
             <div class="col-md-5 mb-3">
               <label for="country" style="  float:right;" class="align">مكان الميلاد</label>
-              <select class="custom-select d-block w-100" id="country" name="pob" required>
+              <select class="custom-select d-block w-100" id="country" name="pob" >
                 <option value="">اختر...</option>
                 <option value="1">اربد</option>
                 <option value="2">جرش</option>
@@ -187,7 +189,7 @@
             </div>
             <div class="col-md-4 mb-3">
               <label for="state" style="  float:right;" class="align">الجنس</label>
-              <select class="custom-select d-block w-100" name="gender" id="state" required >
+              <select class="custom-select d-block w-100" name="gender" id="state"  >
                 <option value="">اختر...</option>
                 <option>ذكر</option>
                 <option>انثى</option>
@@ -200,12 +202,12 @@
            
               min="1960-01-01" max="1998-12-31" class="form-control">
   
-            
+              <div id="dober">الرجاء تعبئة تاريخ الميلاد</div>
             </div>
           </div>
           <div class="mb-3">
             <label for="address" class="align" style="  float:right;"> العنوان</label>
-            <input type="text" class="form-control" id="address" name="address" required>
+            <input type="text" class="form-control" id="address" name="address" >
           
           </div>
 
@@ -230,26 +232,26 @@
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="cc-name" style="float:right;" class="align" >اسم الجامعة </label>
-            <input type="text" class="form-control" name="uni" style="float:right;" id="cc-name" placeholder="" required>
-          
-           
+            <input type="text" class="form-control" name="uni"  id="cc-name" placeholder="" >
+            <div id="engnameer">الرجاء تعبئةاسم الجامعة</div>
+
           </div>
           <div class="col-md-6 mb-3">
             <label for="cc-number" style="  float:right;" class="align">التخصص الأكاديمي</label>
-            <input type="text" class="form-control" name="field" id="cc-number" placeholder="" required>
-           
+            <input type="text" class="form-control" name="field"  id="cc-number" placeholder="" >
+            <div id="eengnameer">الرجاء تعبئةالتخصص الأكاديمي</div>
           </div>
           
           <label for="cc-number" style="  float:right; margin-left: 10px;" class="align">  مدة التدريب </label>&nbsp;&nbsp;&nbsp;
 
           <div class="col-md-3 mb-3">
             <label for="cc-expiration" class="align" style="  float:right;">من</label>
-            <input type="text" class="form-control" name="from" id="cc-expiration" placeholder="" required>
+            <input type="text" class="form-control" name="from" id="cc-expiration" placeholder="" >
             
           </div>
           <div class="col-md-3 mb-3">
             <label for="cc-cvv" class="align" style="  float:right;">إلى</label>
-            <input type="text"   name="to" class="form-control" id="cc-cvv" placeholder="" required>
+            <input type="text"   name="to" class="form-control" id="cc-cvv" placeholder="" >
            
           </div>
         </div>
@@ -268,54 +270,180 @@
 <br>
 <br>
 <!--Section: Contact v.2-->
-      <footer>
-        <div class="maps">
-            <h2>
-                موقع الوزارة
-            </h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27082.248775516062!2d35.907527!3d31.95327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8249690f80346152!2sMinistry%20Of%20Tourism%20And%20Antiquities!5e0!3m2!1sen!2sjo!4v1598642562339!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        <div class="links">
-            <h2>
-                اتصل بنا
-            </h2>
-            <div class="items">
-              <h4>  وزارة السياحة و الأثار</h4>
-                <h4><a href="tel:(+962)64603360"> +962 6 4603360: تلفون</a> </h4>
-             
-                <h4 style="text-align: right;">
-                    العنوان:
-                    <a href="#"> الدوار الثالث جبل عمـــان</a>
-                </h4>
-            </div>
-        </div>
-        <div class="links">
-            <h2>
-                من الموقع
-            </h2>
-            <div class="items">
-                <h4>
-                    <a href="#">
-                        الأسئلة الاكثر تكرارا
-                    </a>
-                </h4>
-                <h4>
-                    <a href="#"> روابط مفيدة</a>
-                </h4>
-                <div class="social-media">
-                  <a href="#">
-                    <i class="fab fa-facebook-f"></i>  </a>
-                    <a href="#">   <i class="fab fa-twitter"></i>  </a>
-                      <a href="#">   <i class="fab fa-instagram"></i>  </a>
-                        <a href="#">  <i class="fab fa-youtube"></i>  </a>       
-                 
-                </div>
-              
-            </div>
-        </div>
-    </footer>
+<footer>
+  <div class="maps">
+    <h2>
+      موقع الوزارة
+    </h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27082.248775516062!2d35.907527!3d31.95327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8249690f80346152!2sMinistry%20Of%20Tourism%20And%20Antiquities!5e0!3m2!1sen!2sjo!4v1598642562339!5m2!1sen!2sjo"
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+  <div class="links">
+    <h2>
+      اتصل بنا
+    </h2>
+    <div class="items">
+      <h4> وزارة السياحة و الأثار</h4>
+      <h4><a href="tel:(+962)64603360"> +962 6 4603360: تلفون</a> </h4>
+
+      <h4 style="text-align: right;">
+        العنوان:
+        <a href="#"> الدوار الثالث جبل عمـــان</a>
+      </h4>
+    </div>
+  </div>
+  <div class="links">
+    <h2>
+      من الموقع
+    </h2>
+    <div class="items">
+
+      <h4>
+        <a href="#"> روابط مفيدة</a>
+      </h4>
+      <ul dir="rtl" style="text-align: right;">
+        <li>
+          <h6><a href="//www.jordaninvestment.com">رسالة عمان</a></h6>
+        </li>
+        <li>
+          <h6>
+            <a href="http://www.hotelsofminnesota.com/jordaninvestmentcom/">مؤسسة تشجيع الاستثمار</a>
+          </h6>
+        </li>
+        <li>
+          <h6>
+            <a href="http://www.visitjordan.com/"> هيئة تنشيط السياحة</a>
+          </h6>
+        </li>
+        <li>
+          <h6>
+            <a href="https://www.rj.com/">الملكية الأردنية</a>
+          </h6>
+        </li>
+        <li>
+          <h6>
+            <a href=" http://www.doa.gov.jo/
+                                    ">دائرة الأثار العامة</a>
+          </h6>
+        </li>
+
+      </ul>
+
+      <div class="social-media">
+        <a href="https://web.facebook.com/mota.jordan?_rdc=1&_rdr">
+          <i class="fab fa-facebook-f"></i> </a>
+        <a href="https://twitter.com/MOTA_Jordan"> <i class="fab fa-twitter"></i> </a>
+        <a href="https://www.instagram.com/p/CEv9hH1jRQQ/?igshid=1m0ze0hk4j9ol"> <i class="fab fa-instagram"></i> </a>
+        <a href="https://www.youtube.com/channel/UComkR-yuX0qOI10LhNZzYRg/videos"> <i class="fab fa-youtube"></i> </a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
     <h4 class="copyright">جميع الحقوق محفوظة © 2020 وزارةالسياحة والاثار الأردنية
     </h4>
+    <script>
+    var arname=document.forms['contact-form']['name'];
+    var arnameerror=document.getElementById('arnameer');
+    arname.addEventListener('textInput',arnameVerify);
+    var ID=document.forms['contact-form']['natid'];
+   var IDerror=document.getElementById('Iderror');
+    ID.addEventListener('textInput',IDverify); 
+    var DOB=document.forms['contact-form']['dob'];
+  var DOBer=document.getElementById('dober');
+  DOB.addEventListener('textInput',dobVerify); 
+  var enname=document.forms['contact-form']['uni'];
+  var ennameer=document.getElementById('engnameer');
+  enname.addEventListener('textInput',engnameverify); 
+  var eenname=document.forms['contact-form']['field'];
+  var eennameer=document.getElementById('eengnameer');
+  enname.addEventListener('textInput',eengnameverify); 
+        function validated(){
+          if(arname.value.length<6){
+    arnameerror.style.display="block";
+  arname.focus();
+  return false;
+    }
+    if(ID.value.length<10){
+IDerror.style.display="block";
+ID.focus();
+return false;
+  }
+  if(DOB.value==null || DOB.value==''){
+      DOBer.style.display="block";
+DOB.focus();
+return false;
+  }
+  if(enname.value.length<6){
+  ennameer.style.display="block";
+enname.focus();
+return false;
+  }
+  if(eenname.value.length<6){
+  eennameer.style.display="block";
+eenname.focus();
+return false;
+  }
+    }
+    function arnameVerify(){
+      if(arname.value.length>6)
+      
+      {
+        arname.style.border ="1px solid Silver";
+        arnameerror.style.display="none";
+   return true;
+  
+      }
+    }
+    function IDverify(){
+    if(ID.value.length=10)
     
+    {
+      ID.style.border ="1px solid Silver";
+      IDerror.style.display="none";
+ return true;
+
+    }
+
+    
+  }
+  function dobVerify(){
+    if(DOB.value!=null)
+    
+    {
+      DOB.style.border ="1px solid Silver";
+      DOBer.style.display="none";
+ return true;
+
+    }
+
+
+  }
+  function engnameverify(){
+    if(enname.value.length>6)
+    
+    {
+      enname.style.border ="1px solid Silver";
+      ennameer.style.display="none";
+ return true;
+
+    }
+  }
+
+  function eengnameverify(){
+    if(eenname.value.length>6)
+    
+    {
+      eenname.style.border ="1px solid Silver";
+      eennameer.style.display="none";
+ return true;
+
+    }
+  }
+
+  </script>
 </body>
 </html>

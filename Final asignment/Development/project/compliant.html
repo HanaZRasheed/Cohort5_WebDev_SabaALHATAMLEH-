@@ -118,21 +118,30 @@
     </div>
 
     <div class="containerrr">
-        <form id="contact-form" action="phppages/complient_page.php" method="POST">
+        <form id="contact-form" action="phppages/complient_page.php" method="POST"  onsubmit="return validated()">
           <div class="roww">
             <div class="coll-75">
-              <input type="text" id="fname" name="name" >
+              <input type="text" id="fname" name="name" class="form-control">
+              <div id="arnameer">الرجاء تعبئةالاسم الرباعي الكامل </div>
             </div>
             <div class="coll-25">
               <p for="fname" class="align" style="  float:right;">الاسم </p>
+              
+
             </div>
            
           </div>
+
+       
           <div class="roww">
+                      <div class="coll-75">
+              <div class="input-group-prepend">
            
-            <div class="coll-75">
-                <input type="email" id="lname" name="mail" style="  float:right;">
-              </div>
+                <input type="email" class="form-control" id="username" name="mail" >
+                <span class="input-group-text">@</span>`
+              </div
+              >
+            </div>
             <div class="coll-25">
               <p for="lname" class="align" style="  float:right;">البريد الإلكتروني</p>
             </div>
@@ -140,10 +149,13 @@
           <div class="roww">
            
             <div class="coll-75">
-                <input type="number" id="lname" name="number" style="  float:right;">
+
+                <input type="number" class="form-control" id="lname" name="number" style="  float:right; "/>
+               <div id="Iderror" >الرجاء تعبئةرقم الهاتف</div>
             </div>
             <div class="coll-25">
               <p for="lname" class="align" style="  float:right;">رقم الهاتف أو الجوال</p>
+           
             </div>
           </div>
 
@@ -167,6 +179,8 @@
            
             <div class="coll-75">
               <input type="text" id="lname" name="buildingname">
+              <div id="engnameer" >الرجاء تعبئة اسم المنشأة</div>
+
             </div>
             <div class="coll-25">
               <p for="lname" class="align" style="  float:right;">اسم المنشأة</p>
@@ -185,9 +199,11 @@
          
             <div class="coll-75">
               <textarea id="subject" name="comptxt" placeholder="اكتب شكوى.." style="height:200px"></textarea>
+              <div id="Iderroor" >الرجاء تعبئة نص الشكوى</div>
             </div>
             <div class="coll-25">
               <p for="subject" class="align" style="  float:right;">نص الشكوى	</p>
+
             </div>
           </div>
           <button type="submit" class="btn btn-primary" name="submit" value="Submit"
@@ -271,37 +287,87 @@
     <h4 class="copyright">جميع الحقوق محفوظة © 2020 وزارةالسياحة والاثار الأردنية
     </h4>
     <script>
+    var arname=document.forms['contact-form']['name'];
+  var arnameerror=document.getElementById('arnameer');
+  arname.addEventListener('textInput',arnameVerify);
+  var ID=document.forms['contact-form']['number'];
+  var IDerror=document.getElementById('Iderror');
+  ID.addEventListener('textInput',IDverify); 
+  var enname=document.forms['contact-form']['buildingname'];
+  var ennameer=document.getElementById('engnameer');
+  enname.addEventListener('textInput',engnameverify); 
+  var IDD=document.forms['contact-form']['comptxt'];
+  var IDerroor=document.getElementById('Iderroor');
+  ID.addEventListener('textInput',IDDverify); 
+
+
+
+
+      function validated(){
+        if(arname.value.length<6){
+  arnameerror.style.display="block";
+arname.focus();
+return false;
+  }
+  if(ID.value.length<10){
+IDerror.style.display="block";
+ID.focus();
+return false;
+  }
+  if(enname.value.length<6){
+  ennameer.style.display="block";
+enname.focus();
+return false;
+  }
+  if(IDD.value.length<6){
+  IDerroor.style.display="block";
+IDD.focus();
+return false;
+  }
+  }
+  function arnameVerify(){
+    if(arname.value.length>6)
     
-      // this is the id of the form
-      $("#contact-form").submit(function(e) {
-      
-       
-      
-      e.preventDefault(); // avoid to execute the actual submit of the form.
-      
-      
-      
-      var form = $(this);
-      var url = form.attr('action');
-      
-      $.ajax({
-             type: "POST",
-             url: url,
-             data: form.serialize(), // serializes the form's elements.
-             success: function(data)
-             {
-                 alert("Thanks for filling out our form!"); // show response from the php script.
-             }
-           });
-      
-      
-      
-      
-      });
-      
-          
-      </script>
+    {
+      arname.style.border ="1px solid Silver";
+      arnameerror.style.display="none";
+ return true;
+
+    }
+
+  }
+  function IDverify(){
+    if(ID.value.length=10)
     
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {
+      ID.style.border ="1px solid Silver";
+      IDerror.style.display="none";
+ return true;
+
+    }
+
+    
+  }
+  function engnameverify(){
+    if(enname.value.length>6)
+    
+    {
+      enname.style.border ="1px solid Silver";
+      ennameer.style.display="none";
+ return true;
+
+    }
+  }
+  function IDDverify(){
+    if(IDD.value.length>6)
+    
+    {
+      IDD.style.border ="1px solid Silver";
+      IDerroor.style.display="none";
+ return true;
+
+    }
+  }
+</script>
 </body>
 </html>

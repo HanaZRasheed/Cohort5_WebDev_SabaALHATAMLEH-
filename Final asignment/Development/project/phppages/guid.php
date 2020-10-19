@@ -8,7 +8,16 @@ if(isset($_POST['natnum'])){
 
     VALUES ('$_POST[natnum]', '$_POST[arname]','$_POST[engname]', '$_POST[status]', '$_POST[moname]', '$_POST[pob]', '$_POST[dob]', '$_POST[gender]', '$_POST[degree]', '$_POST[field]', '$_POST[dog]', '$_POST[uni]');");
     if($data)
-        echo 'inserted';
+     
+    echo '<script>     
+    function show_alert() {
+        alert("لقد قمت بتقديم طلب تجديد رخصة دليل سياحي بنجاح");
+    }
+    
+    show_alert();   
+</script>'; 
+
+
     
     else
     {echo 'hazim';
